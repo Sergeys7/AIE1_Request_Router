@@ -1,0 +1,11 @@
+# Результаты ручной приёмки
+
+| Сценарий                | Команда                                                                          | Ожидаемый результат                                                                                                | Фактический результат                                          | Код завершения | Статус |
+| ----------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- | -------------- | ------ |
+| Корректный JSON         | `python3 src/main.py --input datasets/requests.json --output src/result.json`    | Результат (по полям `id`, `category`, `priority`) совпадает с `datasets/expected-results.json` для `requests.json` | Полное совпадение                                              | 0              | PASS   |
+| Корректный CSV          | `python3 src/main.py --input datasets/requests.csv --output src/result.csv.json` | Результат совпадает с `datasets/expected-results.json` для `requests.csv`                                          | Полное совпадение                                              | 0              | PASS   |
+| Несуществующий файл     | `python3 src/main.py --input /tmp/nonexistent.json --output out.json`            | Сообщение об ошибке "входной файл не найден", код != 0                                                             | Входной файл не найден: /tmp/nonexistent.json                  | 1              | PASS   |
+| Повреждённый JSON       | `python3 src/main.py --input datasets/broken.json --output out.json`             | Сообщение об ошибке синтаксиса JSON, код != 0                                                                      | Синтаксическая ошибка в JSON-файле                             | 2              | PASS   |
+| Отсутствует поле 'text' | `python3 src/main.py --input datasets/missing-field.json --output out.json`      | Сообщение об отсутствии или пустом поле, код != 0                                                                  | Ошибка: в записи #0 отсутствует или пусто поле 'id' или 'text' | 3              | PASS   |
+
+Все сценарии выполнены успешно. Программа готова к передаче.

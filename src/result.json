@@ -1,0 +1,32 @@
+[
+  {
+    "id": "r-001",
+    "category": "access",
+    "priority": "medium"
+  },
+  {
+    "id": "r-002",
+    "category": "bug",
+    "priority": "high"
+  },
+  {
+    "id": "r-003",
+    "category": "billing",
+    "priority": "low"
+  },
+  {
+    "id": "r-004",
+    "category": "bug",
+    "priority": "medium"
+  },
+  {
+    "id": "r-005",
+    "category": "other",
+    "priority": "low"
+  },
+  {
+    "id": "r-006",
+    "category": "access",
+    "priority": "high"
+  }
+]

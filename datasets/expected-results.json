@@ -1,0 +1,56 @@
+{
+  "requests.json": [
+    {
+      "id": "r-001",
+      "category": "access",
+      "priority": "medium"
+    },
+    {
+      "id": "r-002",
+      "category": "bug",
+      "priority": "high"
+    },
+    {
+      "id": "r-003",
+      "category": "billing",
+      "priority": "low"
+    },
+    {
+      "id": "r-004",
+      "category": "bug",
+      "priority": "medium"
+    },
+    {
+      "id": "r-005",
+      "category": "other",
+      "priority": "low"
+    },
+    {
+      "id": "r-006",
+      "category": "access",
+      "priority": "high"
+    }
+  ],
+  "requests.csv": [
+    {
+      "id": "c-001",
+      "category": "bug",
+      "priority": "medium"
+    },
+    {
+      "id": "c-002",
+      "category": "billing",
+      "priority": "low"
+    },
+    {
+      "id": "c-003",
+      "category": "access",
+      "priority": "medium"
+    },
+    {
+      "id": "c-004",
+      "category": "other",
+      "priority": "low"
+    }
+  ]
+}
